@@ -61,5 +61,9 @@ class TestFunction(TestCase):
             'Masukkan nomor telepon'
         )
 
+    def test_search_items(self):
+        nama = Item.objects.create(name=request.POST['name_text'])
+        nama2 = Item.objects.get(item.name=nama)
+        self.assertEqual(nama,nama2)
 
 	
