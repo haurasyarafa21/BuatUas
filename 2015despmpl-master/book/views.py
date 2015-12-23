@@ -14,5 +14,12 @@ def add_item(name, number):
     pass
 
 def search_item(name, number):
-    pass
+    if Item.objects.create(name=request.POST['name_text'])
+    	items = Item.objects.get(item.name=['name_text'])
 
+   	return render(request, 'home.html', {'items': items})
+
+   	if Item.objects.create(number=request.POST['number_text'])
+    	items = Item.objects.get(item.number=['number_text'])
+
+   	return render(request, 'home.html', {'items': items})
